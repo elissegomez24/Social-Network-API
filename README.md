@@ -19,13 +19,14 @@ This project is a Social Network API that allows users to create and manage thei
 ## Installation
 
 1. Clone the repository:
-2. Navigate to the project directory 
+2. Navigate to the project directory
 3. Install the necessary dependencies: npm install
 4. Start the server: npm start
 
 - The server will start on http://localhost:3001.
 
 ## Usage
+
 - Start the server with command- npm start
 - This will start the server and sync the Mongoose models to the MongoDB database.
 - Use Insomnia or any API testing tool to interact with the API.
@@ -61,6 +62,7 @@ This project is a Social Network API that allows users to create and manage thei
 ## Models
 
 1. **User** - Represents users of the social network. Each user has a username, email, and a list of friends. Users can also have thoughts associated with them.
+
    - Fields:
      - `username`: A string that must be unique and is required.
      - `email`: A unique and required string that is validated using a regular expression.
@@ -70,6 +72,7 @@ This project is a Social Network API that allows users to create and manage thei
      - `friendCount`: Returns the number of friends a user has.
 
 2. **Thought** - Represents thoughts or posts created by users. Each thought has a content field and reactions associated with it.
+
    - Fields:
      - `thoughtText`: A required string representing the content of the thought. The length must be between 1 and 280 characters.
      - `createdAt`: A timestamp representing when the thought was created, automatically set to the current date and time.
@@ -79,6 +82,7 @@ This project is a Social Network API that allows users to create and manage thei
      - `reactionCount`: Returns the number of reactions a thought has received.
 
 3. **Reaction** - A subdocument schema used within the Thought model. Represents reactions or comments on thoughts. This model is not a standalone schema but exists as a nested schema within the Thought model.
+
    - Fields:
      - `reactionId`: A unique identifier for each reaction.
      - `reactionBody`: A required string that represents the content of the reaction.
@@ -90,6 +94,7 @@ This project is a Social Network API that allows users to create and manage thei
      - `friendId`: An `ObjectId` representing another user who is a friend.
 
 ## Contributing
+
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-branch`).
 3. Commit your changes (`git commit -m "Add new feature"`).
@@ -97,16 +102,20 @@ This project is a Social Network API that allows users to create and manage thei
 5. Open a pull request.
 
 ## Screenshots
+
 ![alt text](images/Screenshot1.png)
 ![alt text](images/Screenshot2.png)
 ![alt text](images/Screenshot3.png)
 ![alt text](images/Screenshot4.png)
 
-## Walkthrough Video 
+## Walkthrough Video
+
+https://screenrec.com/share/B10lj4Ww9X
 
 ## License
+
 This project is licensed under the [MIT LICENSE](LICENSE).
 
 > [!NOTE]  
-> Recourses used for creating code. Referred back to class work for file format such as reviewing class recording. Worked with peers on assignment and compared challenge template to 
-assist with creating readme file.
+> Recourses used for creating code. Referred back to class work for file format such as reviewing class recording. Worked with peers on assignment and compared challenge template to
+> assist with creating readme file.
