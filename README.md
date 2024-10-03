@@ -97,6 +97,10 @@ This project is a Social Network API that allows users to create and manage thei
 5. Open a pull request.
 
 ## Screenshots
+![alt text](images/Screenshot1.png)
+![alt text](images/Screenshot2.png)
+![alt text](images/Screenshot3.png)
+![alt text](images/Screenshot4.png)
 
 ## Walkthrough Video 
 
