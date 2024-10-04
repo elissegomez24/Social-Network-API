@@ -110,7 +110,7 @@ This project is a Social Network API that allows users to create and manage thei
 
 ## Walkthrough Video
 
-https://screenrec.com/share/B10lj4Ww9X
+https://screenrec.com/share/i43Ec6XJne 
 
 ## License
 
